@@ -4,32 +4,32 @@ from students.models import Flow, Direction, Student
 from students.serializers import FlowSerializer, DirectionSerializer, StudentSerializer
 
 
-class FlowListApiView(generics.ListApiView):
+class FlowListAPIView(generics.ListAPIView):
     queryset = Flow.objects.all()
     serializer_class = FlowSerializer
 
-class FlowCreateApiView(generics.CreateApiView):
+class FlowCreateAPIView(generics.CreateAPIView):
     queryset = Flow.objects.all()
     serializer_class = FlowSerializer
 
 
-class DirectionListApiView(generics.ListApiView):
+class DirectionListAPIView(generics.ListAPIView):
     queryset = Direction.objects.all()
     serializer_class = DirectionSerializer
 
-class DirectionCreateApiView(generics.CreateApiView):
+class DirectionCreateApiView(generics.CreateAPIView):
     queryset = Direction.objects.all()
     serializer_class = DirectionSerializer
 
 
-class StudentListApiView(generics.ListApiView):
+class StudentListAPIView(generics.ListAPIView):
     queryset = Student.objects.all()
     serializer_class = StudentSerializer
 
-class StudentCreateApiView(generics.CreateApiView):
+class StudentCreateAPIView(generics.CreateAPIView):
     queryset = Student.objects.all()
     serializer_class = StudentSerializer
 
-class StudentDestroyApiView(generics.DestroyAPIView):
+class StudentDestroyAPIView(generics.DestroyAPIView):
     queryset = Student.objects.all()
     serializer_class = StudentSerializer

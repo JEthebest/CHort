@@ -21,13 +21,13 @@ schema_view = get_schema_view(
 )
 
 api_v1 = [
-    path('flows/', views.FlowListApiView.as_view()),
-    path('flow/', views.FlowCreateApiView.as_view()),
-    path('direcrions/', views.DirectionListApiView.as_view()),
+    path('flows/', views.FlowListAPIView.as_view()),
+    path('flow/', views.FlowCreateAPIView.as_view()),
+    path('directions/', views.DirectionListAPIView.as_view()),
     path('direction/', views.DirectionCreateApiView.as_view()),
-    path('students/', views.StudentListApiView.as_view()),
-    path('student/', views.StudentCreateApiView.as_view()),
-    path('student/<int:pk>/', views.StudentDestroyApiView.as_view()),
+    path('students/', views.StudentListAPIView.as_view()),
+    path('student/', views.StudentCreateAPIView.as_view()),
+    path('student/<int:pk>/', views.StudentDestroyAPIView.as_view()),
 ]
 
 urlpatterns = [
